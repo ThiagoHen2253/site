@@ -1,0 +1,12 @@
+body{
+    background-color: lightcoral;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tabela-simples{
+    background-color: rgb(220, 100, 100);
+    padding: 3%;
+}
+td:hover{
+    background-color: black;
+    color: aliceblue;
+}

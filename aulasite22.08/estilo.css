@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(255, 0, 0);
+}
+
+#corDiferente2{
+    border-style: solid;
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+
+/*Seletor de classe*/
+.bonitinho{
+    background-color: rgba(0, 0, 0, 0.587)
+}
+li{
+    background-color: rgb(235, 149, 21); color: black; border-style: groove; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+li.active{
+    background-color: rgb(255, 0, 255);
+}
+.space{
+    padding: 0.9rem
+}
