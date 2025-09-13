@@ -1,0 +1,21 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    text-align: center;
+}
+label{
+    text-align: center;
+
+}
+
+.formulario{
+    margin: 5rem;
+    margin-right: 2rem;
+    border-style: dashed;
+    padding: 1rem;
+}
+input{
+    margin-bottom: 1rem;
+    padding: 0.1rem;
+}
