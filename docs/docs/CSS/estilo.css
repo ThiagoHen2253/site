@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif; /* Fonte do texto */
+    margin: 0;
+    padding: 0;
+    background-color: #b2d5ba; /* Cor de fundo */
+    color: #000000; /* Cor do texto padrão */
+}
+.cabecalho {
+    background-color: #248f8d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap; /*quebra de linha*/
+}
+
+/*nome e subtítulo */
+.nome-sub {
+    max-width: 70%;
+}
+
+/* Estilo do título com o nome */
+#nome {
+    margin: 0;
+}
+
+/* Subtítulo abaixo do nome */
+.subtitulo {
+    font-size: 1.1em;
+    margin-top: 5px;
+    color: #b4b1b1; /* Cinza claro */
+}
+
+
+/* Container principal que segura o menu e o conteúdo */
+.container {
+    display: flex; /* Flexbox: itens em linha */
+    flex-direction: row;
+    margin: 20px;
+}
+
+.menu {
+    width: 20%; /* vai 20% da largura da tela */
+    background-color: #61ada0;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+/* Remove padrão da lista */
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Espaçamentodo menu */
+.menu li {
+    margin-bottom: 15px;
+}
+
+/* Estilo padrão dos links */
+.menu a {
+    color: white;
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+}
+
+/* Efeito quando o mouse passa por cima do link */
+.menu a:hover {
+    color: #015964; /* Azul claro */
+}
+
+.conteudo {
+    width: 80%; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Cada seção do currículo */
+section {
+    margin-bottom: 40px; /* Espaço entre seções */
+}
+
+/* Título de cada seção */
+section h2 {
+    border-bottom: 2px solid #6d6d6d; /* Linha abaixo do título */
+    padding-bottom: 5px;
+    color: #00bcd4;
+}
+
+/* Estilo das listas */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
