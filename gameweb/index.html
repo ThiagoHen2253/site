@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cena do Crime — Caso André Vasconcelos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-dark text-light">
+
+    <div class="container py-4">
+
+
+        <header class="text-center mb-4">
+            <h1 class="display-6 fw-bold">ARQUIVO CONFIDENCIAL</h1>
+            <p class="text-muted small">Caso: André Vasconcelos — Investigação preliminar</p>
+            <hr class="border-secondary">
+        </header>
+
+
+        <section class="row g-4 align-items-start">
+            <div class="col-lg-7">
+                <div class="card bg-secondary text-light shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">Cena do Crime</h4>
+                        <p class="text-muted small">Observe atentamente.</p>
+
+                        <div class="ratio ratio-16x9 mb-3">
+                            <img src="cena2.png" alt="Cena do crime" class="img-fluid rounded" style="object-fit:cover;">
+                        </div>
+
+                        <p class="mb-1"><strong>Resumo curto:</strong> sangue próximo à porta e corpo com sinais de agressão. Pegadas e câmeras ambíguas.</p>
+                        <p class="text-muted small mb-0">Sua missão: escolher as provas essenciais e identificar o culpado corretamente.</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <aside class="col-lg-5">
+
+                <div class="card bg-secondary text-light mb-3 shadow">
+                    <div class="card-body">
+                        <h5>Provas Encontradas</h5>
+                        <p class="text-muted small">Selecione as evidências que você considera essenciais.</p>
+
+                        <div class="list-group" id="evidenceList" role="list">
+                            <label class="list-group-item d-flex justify-content-between align-items-start" id="ev-sangue">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Mancha de sangue perto da porta</div>
+                  <small class="text-muted">Indica tentativa de fuga; respingos e direção importam.</small>
+                </div>
+                <input class="form-check-input mt-0 evidence" type="checkbox" value="sangue" aria-label="sangue">
+              </label>
+
+                            <label class="list-group-item d-flex justify-content-between align-items-start" id="ev-corpo">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Corpo com sinais de agressão</div>
+                  <small class="text-muted">Padrão das lesões sugere luta física direta.</small>
+                </div>
+                <input class="form-check-input mt-0 evidence" type="checkbox" value="corpo" aria-label="corpo">
+              </label>
+
+                            <label class="list-group-item d-flex justify-content-between align-items-start" id="ev-pegadas">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Pegadas na sala</div>
+                  <small class="text-muted">Podem ou não ser do agressor; forma e profundidade importam.</small>
+                </div>
+                <input class="form-check-input mt-0 evidence" type="checkbox" value="pegadas" aria-label="pegadas">
+              </label>
+
+                            <label class="list-group-item d-flex justify-content-between align-items-start" id="ev-camera">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Câmera do prédio sem gravação</div>
+                  <small class="text-muted">Falha/remoção de arquivo — pode ter sido deliberado.</small>
+                </div>
+                <input class="form-check-input mt-0 evidence" type="checkbox" value="camera" aria-label="camera">
+              </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-secondary text-light mb-3 shadow">
+                    <div class="card-body">
+                        <h5>Suspeitos</h5>
+                        <select id="suspeito" class="form-select mb-2" aria-label="Suspeito">
+              <option value="">— Selecione um suspeito —</option>
+              <option value="1">Carlos Mendes — Vizinho nervoso</option>
+              <option value="2">Juliana Rocha — Colega de trabalho</option>
+              <option value="3">Rogério Silva — Ex-parceiro de Negocios</option>
+              <option value="4">Bruno Almeida — Entregador</option>
+              <option value="5">Marina Torres — Amiga próxima</option>
+            </select>
+
+                        <div class="d-grid">
+                            <button id="finalizar" class="btn btn-lg btn-outline-light">Finalizar investigação</button>
+                        </div>
+
+                        <div id="resultado" class="mt-3"></div>
+            </aside>
+        </section>
+
+        <section class="mt-4">
+            <div class="card bg-secondary text-light shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Dossiê Completo — Perfis dos Suspeitos</h5>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <h6>1. Carlos Mendes — Vizinho Nervoso</h6>
+                            <p class="small text-muted mb-0">
+                                Carlos vive no andar superior, reclama de insônia e tem crises de ansiedade. Vizinhos disseram que o ouviram mexendo coisas e que sua versão sobre a noite do crime variou. Não há digitais ou sangue que o liguem ao corpo. Descrito como reservado; tende
+                                a evitar confrontos.
+                            </p>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <h6>2. Juliana Rocha — Colega de Trabalho</h6>
+                            <p class="small text-muted mb-0">
+                                Juliana trabalhou com a vítima por anos. Tiveram uma discussão sobre um projeto crítico. Ela possui álibi em videoconferência com participantes e logs confirmando sua presença. Motivo existe, mas evidências físicas são inexistentes.
+                            </p>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <h6>3. Rogério Silva — Ex-parceiro de Negocios</h6>
+                            <p class="small text-muted mb-0">
+                                Histórico de agressões, denúncias e brigas. Testemunhas relataram discussão alta no fim de semana. Pegadas e padrão de lesões no corpo correspondem ao histórico de agressões. O comportamento e as evidências forenses apontam para ele como o agressor.
+                            </p>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <h6>4. Bruno Almeida — Entregador</h6>
+                            <p class="small text-muted mb-0">
+                                Entregador de rotas locais. Registrado em filmagens do térreo saindo antes do horário estimado. Presença no prédio explica parte das evidências circunstanciais, mas não há laços diretos com a agressão.
+                            </p>
+                        </div>
+
+                        <div class="col-md-12 mb-0">
+                            <h6>5. Marina Torres — Amiga Próxima</h6>
+                            <p class="small text-muted mb-0">
+                                Amiga íntima da vítima, com histórico de mensagens tensas antes do evento. Comprovada viagem no momento do crime (hotel e fotos). Sem conexão física com o local.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-4 small text-muted">
+            <p class="mb-0">Arquivo confidencial — apenas para fins de simulação investigativa.</p>
+        </footer>
+        </div>
+        <script src="js/meuscript.js"></script>
+
+</body>
+
+</html>
